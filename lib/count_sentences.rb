@@ -19,7 +19,6 @@ class String
     sentence_count = 0
     
     word_array.each do |word|
-      binding.pry
       if (word.sentence? || word.question? || word.exclamation?)
         sentence_count += 1 
       end
